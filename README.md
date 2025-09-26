@@ -83,3 +83,17 @@ http://localhost:8080/h2-console
 - **JDBC URL:** `jdbc:h2:file:/app/data/ferreteria-db`  
 - **User:** `sa`  
 - **Password:** *(vacío)* 
+
+**************************************************************************************************************************************
+
+Pasos para docker
+
+El proyecto ya viene completo y con la jar listo para ejecutar, solamente se necesitan estos pasos:
+
+primero se crea el volumen para docker:
+
+docker volume create ferreteria-data
+
+Para correr docker segun el usuario ya que se corre de forma local
+
+docker run -p 8080:8080 -v C:\Users\usuario\ruta\Ferreteria\data:/app/data ferreteriadocker run -p 8080:8080 ferreteria
